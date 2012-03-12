@@ -4,6 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>망깔 홈피 회원 가입^^</title>
 <style type="text/css">
+body{background:url(6.jpg) center repeat fixed;}
 #redtext{font-size:13px;
          font-style:inherit;
          font-weight:bold; color: red;
@@ -11,11 +12,77 @@
 #hn{font-size:18px;
     font-weight:bold;
    }
+#text{font-size:15px;
+      font-weight:bold;
+      font-style:normal; color:red;
+    }
+#imagept{position:absolute;
+               left:700px;
+               top:300px;}
+#myinput{
+         background-color:#cceedd;
+         border-top:none;
+         border-right:none;
+         border-bottom:1px dotted black;
+         border-left:none;
+}
+#mybutton{
+         border:1px solid black;
+         padding:1px;
+}
 </style>
 </head>
 <body>
+<h3>회원 약관 정보</h3>
+<p><textarea name="member" cols="80" rows="10" readonly="readonly">
+(주)망깔 홈피 회원약관
+
+제1조 (목적)
+이 이용약관(이하 '약관'이라 합니다.)은 이용고객(이하  '회원'이라 합니다)
+함에 있어 회사와 회원간의 권리, 의무 및 책임사항을 규정함을 목적으로 함
+
+제2조 (약관의 명시와 개정)
+1. 회사는 이약관의 내용과 상호, 영업소 소재지, 대표자의 성명, 사업자등록번호,
+초기화면 또는 연결화면을 통하여 게시합니다.
+</textarea>
 <p id="hn">회원 가입 정보<p>
 <p id="redtext">아이디 6자 미만 비밀번호 5자 미만으로 입력해주세요^.,^</p>
-
+<form action="" method="post">
+<table>
+<tbody>
+<tr>
+<td id="text">※아 이 디</td>
+<td><input id="myinput" type="text" name="id" size="20" maxlength="10"></td>
+</tr>
+<tr>
+<td id="text">※비밀번호</td>
+<td><input id="myinput" type="password" name="pw1" size="20" maxlength="8"></td>
+</tr>
+<tr>
+<td id="text">※비밀번호 확인</td>
+<td><input id="myinput" type="password" name="pw2" size="20" maxlength="8"></td>
+</tr>
+<tr>
+<td id="text">※이름</td>
+<td><input id="myinput" type="text" name="mytext1" size="20"></td>
+</tr>
+<tr>
+<td id="text">※전화번호</td>
+<td><input id="myinput" type="text" name="mytext2" size="20" value="숫자만 입력 ^.^"></td>
+</tr>
+<tr>
+<td id="text">※주소</td>
+<td><input id="myinput" type="text" name="mytext3" size="40" maxlength="100"></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td><input id="mybutton" name="submit" type="submit" value="가입하기">
+    <input id="mybutton" name="reset" type="reset" value="새로쓰기">
+</td>
+</tr>
+</tbody>
+</table>
+</form>
+<img id="imagept" src="5.jpg">
 </body>
 </html>
